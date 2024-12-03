@@ -9,3 +9,7 @@ func CountOccurrences(slice []uint32, element uint32) uint32 {
 	}
 	return count
 }
+
+func RemoveElement(slice []int8, s int) []int8 {
+	return append(slice[:s], slice[s+1:]...)
+}
